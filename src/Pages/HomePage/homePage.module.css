@@ -1,0 +1,161 @@
+.container {
+    width: 100%;
+    background-color: #141d22;
+    padding: 2.5rem 2rem;
+}
+
+.headingContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.eachCard {
+    background: linear-gradient(90deg, #314146 0%, #1e2430 100%);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: relative;
+}
+.eachCardActive {
+    background: linear-gradient(90deg, #212531 0%, #4b808e 100%);
+    border: 1px solid #324a50;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: relative;
+}
+.leftPart {
+    display: flex;
+    align-items: center;
+}
+.posChange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.hexagon {
+    width: 2rem;
+    height: 2rem; /* Adjust the height based on the desired hexagon shape */
+    position: relative;
+    overflow: hidden;
+    transform: rotate(30deg);
+}
+
+.hexagon-inner {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-30deg);
+    overflow: hidden;
+}
+
+.hexagon-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(30deg);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.userName {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.countryName {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.medalIcon {
+    margin-right: 0.5rem;
+}
+.earningNum {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.marker {
+    position: absolute;
+    color: #2ed4fe;
+    left: -10px;
+}
+
+.referYourFriend {
+    height: 5.5rem;
+    border: 1px solid #7aa4b2;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    justify-content: space-between;
+    background: linear-gradient(150deg, rgba(39, 58, 64, 1) 0%, rgba(33, 39, 53, 1) 100%);
+}
+
+.referLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.codeBox {
+    width: 16rem;
+    height: 1.75rem;
+    border: 1px dashed #537b89;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.socialMediaContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+}
+.socialMediaIcons {
+    display: flex;
+}
+.soMedIcon {
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+.facebook {
+    background-color: #3b5997;
+    color: #ffffff;
+}
+.telegram {
+    background-color: #039be6;
+    color: #ffffff;
+}
+.twitter {
+    background-color: #41a2f3;
+    color: #222222;
+}
+.whatsapp {
+    background-color: #67d44a;
+    color: #222222;
+}

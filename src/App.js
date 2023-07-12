@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Route, Routes, useLocation } from "react-router-dom";
+import HeaderSidebar from "./Components/HeaderSidebar/HeaderSidebar";
+import { noHeaderSidebarRoutesArr, routingArray } from "./Services/constants";
+import React from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const path = useLocation();
+
+    return (
+        <React.Fragment>
+            {!noHeaderSidebarRoutesArr.includes(path.pathname) && <HeaderSidebar />}
+            <Routes>
+                {routingArray.map((curElem) => {
+                    return <Route key={curElem.forKey} exact path={curElem.path} element={curElem.element} />;
+                })}
+            </Routes>
+        </React.Fragment>
+    );
 }
 
 export default App;

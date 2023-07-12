@@ -1,0 +1,84 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    justify-content: space-between;
+    background: #171d29;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.walletBox {
+    background-color: #233342;
+    height: 2.35rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-radius: 12px;
+    margin-right: 2rem;
+}
+.walletAmount {
+    margin-right: 0.5rem;
+    display: flex;
+}
+.walletText {
+    color: #4d5b69;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    font-size: 14px;
+}
+.walletNum {
+    font-weight: 600;
+    color: #f6f6f5;
+    font-size: 14px;
+}
+
+.depositBox {
+    background-color: #205662;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border: 2px solid #2ed3fe;
+    border-radius: 12px;
+    color: #53bad8;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.profileContainer {
+    border: 2px solid #2ed4ff;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.downIcon {
+    background-color: #171d29;
+    padding: 0.125rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2ed4ff;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+}

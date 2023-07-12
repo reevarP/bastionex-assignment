@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(38, 57, 62, 1) 0%, rgba(33, 37, 49, 1) 100%);
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+    padding: 0 0.5rem;
+    border-radius: 8px;
+    border: 2px solid #2fd0fb;
+    margin-bottom: 1.5rem;
+}
+
+.iconContainer{
+    width: 2.5rem;
+}
+.textContainer{
+    width: calc(100% - 1.5rem);
+}
+
+.textLine1{
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.textLine2{
+    font-weight: 600;
+    color: #ffffff;
+}

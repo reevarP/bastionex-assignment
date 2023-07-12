@@ -1,0 +1,132 @@
+.eachSidebarSubLink {
+    display: flex;
+    align-items: center;
+    padding-left: 2.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 250ms;
+    font-weight: 500;
+}
+.eachSidebarSubLink:hover {
+    background-color: #ffffff80;
+}
+.eachSidebarSubLink:hover .labelContainer {
+    color: #353535;
+}
+.eachSidebarSubLinkActive {
+    display: flex;
+    align-items: center;
+    padding-left: 2.5rem;
+    margin-bottom: 0.5rem;
+    border-right: 3px solid #353535;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 250ms;
+    font-weight: 700;
+}
+.iconContainer {
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eachSidebarSubLink .labelContainer {
+    color: #ffffff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.eachSidebarSubLinkActive .labelContainer {
+    color: #353535;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.eachSidebarLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 250ms;
+    font-weight: 500;
+}
+.eachSidebarLink:hover {
+    background-color: #ffffff80;
+}
+.eachSidebarLink:hover .labelContainer {
+    color: #353535;
+}
+.eachSidebarLinkActive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    border-right: 3px solid #353535;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    cursor: pointer;
+    padding-right: 1rem;
+    transition: all;
+    transition-duration: 250ms;
+    font-weight: 700;
+}
+.iconContainer {
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eachSidebarLink .labelContainer {
+    color: #ffffff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.eachSidebarLinkActive .labelContainer {
+    color: #353535;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.subItemsContainer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.open {
+    max-height: 1000px; /* Use a value larger than the expected maximum height */
+}
+
+.close {
+    max-height: 0;
+}
+
+.arrow {
+    transition: all;
+    transition-duration: 250ms;
+    color: #ffffff;
+}
+.eachSidebarLink:hover .arrow {
+    color: #444444;
+}
+.arrowDown {
+    transform: rotate(90deg);
+}
+.arrowRight {
+    transform: rotate(0);
+}

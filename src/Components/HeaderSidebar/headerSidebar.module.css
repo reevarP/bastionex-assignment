@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 5rem;
+    width: 100vw;
+    box-shadow: 4px 0 10px #00000023;
+    z-index: 2;
+    border-bottom: 1px solid #172a31;
+}
+
+.sidebar {
+    height: calc(100vh - 5rem);
+    width: 16rem;
+    border-right: 1px solid #1b272e;
+    box-shadow: 0 4px 10px #00000023;
+}
